@@ -1,5 +1,5 @@
-import React from 'react';
-import { Spinner } from 'react-bootstrap';
+import React from "react";
+import { Spinner } from "react-bootstrap";
 
 // Higher Order Component (HOC) that adds a loading spinner when isLoading is true
 const withLoadingSpinner = (WrappedComponent) => {
@@ -7,7 +7,7 @@ const withLoadingSpinner = (WrappedComponent) => {
   return function WithLoadingSpinner({ isLoading, ...props }) {
     // If isLoading is true, display a loading message
     if (isLoading) {
-      return <Spinner animation="border" variant="dark" />;
+      return <Spinner animation="border" variant="light" />;
     }
 
     // Otherwise, render the WrappedComponent with its original props
